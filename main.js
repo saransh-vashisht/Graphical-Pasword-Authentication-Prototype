@@ -64,6 +64,8 @@ function signin() {
     if ((!str.localeCompare(sessionStorage.getItem("upname"))) && !check1) {
         var myText = "Login is successful";
         alert(myText);
+        NewTab();
+
     }
     else{
         var myText = "Login Failed";
@@ -88,3 +90,7 @@ function sendMail2(){
         alert("mail sent successfully");
     })
 }
+
+function NewTab() {
+    window.open(
+      "https://sih.gov.in/", "_blank");}
